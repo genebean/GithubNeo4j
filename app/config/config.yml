@@ -77,11 +77,11 @@ graph_aware_neo4j:
     default_timeout: 500
     connections:
         default:
-            scheme: http
+            scheme: %neo4j_protocol%
             host: %neo4j_host%
             port: %neo4j_port%
             auth: true
-            user: neo4j
+            user: %neo4j_user%
             password: %neo4j_password%
 
 graph_aware_app:
